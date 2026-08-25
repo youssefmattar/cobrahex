@@ -1,0 +1,47 @@
+.aboutUs-header {
+    position: relative;
+    max-height: 400px;
+    min-height: 200px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
+}
+
+
+/* Base background image */
+.aboutUs-header>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Prevents image distortion */
+    z-index: 1;
+}
+
+/* Dark layer over the image */
+.aboutUs-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    /* Adjust opacity (0.55) to change darkness */
+    z-index: 2;
+}
+
+/* Centered heading text above the dark layer */
+.aboutUs-header>h1 {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    font-size: 2.75rem;
+    font-weight: 700;
+}

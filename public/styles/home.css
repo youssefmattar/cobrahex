@@ -1,0 +1,92 @@
+/* GLOBAL RESET & FLEXBOX FOOTER LAYOUT */
+html,
+body {
+    overflow-x: hidden;
+    /* Prevents unwanted horizontal scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+.height-class{
+    max-height: 227px;
+}
+
+.min-height-constraint{
+    min-height: 40px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--bs-body-color);
+}
+
+main {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+/* NAVBAR ADJUSTMENTS */
+.navbar-section {
+    width: 100%;
+    min-height: 180px;
+}
+
+/* CAROUSEL RESPONSIVENESS */
+#myCarousel {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#myCarousel .carousel-item {
+    height: 60vh;
+    min-height: 350px;
+    max-height: 600px;
+}
+
+#myCarousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.paragraph-carousel{
+    font-size: 30px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 200);
+}
+
+
+
+/* FEATURETTE / IMAGE WITH TEXT FIXES */
+.imagewithText-cont {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.imagewithText-cont img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+
+
+/* RESPONSIVE TYPOGRAPHY & SPACING */
+.featurette-divider {
+    margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+    .featurette-heading {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        font-size: 3rem;
+    }
+}
