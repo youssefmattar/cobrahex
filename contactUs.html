@@ -95,7 +95,7 @@
         </div>
     </header>
 
-    <main class="py-5 bg-body-tertiary">
+    <main class="py-5 bg-body-secondary">
         <div class="container">
             <div class="text-center mb-5">
                 <h1 class="fw-bold display-5">Get in Touch</h1>
@@ -115,11 +115,13 @@
                             <p class="mb-0 text-secondary">support@cobrahex.com</p>
                             <p class="text-secondary">jobs@cobrahex.com</p>
                         </div>
-
+                        
                         <div class="mb-4">
                             <h6 class="text-primary fw-bold text-uppercase mb-1">Security & Vulnerability Reports</h6>
                             <p class="text-secondary">security@cobrahex.com</p>
                         </div>
+
+                        
 
                         <div class="mb-4">
                             <h6 class="text-primary fw-bold text-uppercase mb-1">Office Hours</h6>
@@ -133,7 +135,7 @@
                 <!-- CONTACT FORM -->
                 <div class="col-lg-7">
                     <div class="card border-0 shadow-sm p-4">
-                        <form>
+                        <form id="inquiryForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="firstName" class="form-label fw-semibold">First Name</label>
@@ -238,13 +240,13 @@
                 </div>
 
                 <div class="col-md-5 offset-md-1">
-                    <form>
+                    <form id="newsletterForm">
                         <h5>Subscribe to our newsletter</h5>
                         <p>Monthly digest of technical insights, security updates, and releases.</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
                         </div>
                     </form>
                 </div>
