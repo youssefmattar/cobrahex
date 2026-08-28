@@ -51,6 +51,9 @@ main {
     object-fit: cover;
 }
 
+
+
+
 /* Scalable desktop typography with high-contrast text shadow */
 .paragraph-carousel {
     font-size: clamp(1.125rem, 2vw + 0.5rem, 1.75rem);
@@ -118,18 +121,25 @@ main {
         object-fit: cover;
     }
 
+        .carousel-control-prev,
+        .carousel-control-next,
+        .carousel-indicators {
+            z-index: 10;
+            pointer-events: auto !important;
+        }
     /* Gradient backdrop behind caption guarantees text contrast over light images */
     #myCarousel .carousel-caption {
         position: relative;
         z-index: 2;
         right: 0;
         left: 0;
-        bottom: 0;
+        bottom: 10px;
         width: 100%;
         padding: 2.5rem 1rem 2rem;
         margin: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 60%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 60%);/**/
         color: #ffffff;
+        border-radius: 20px;
     }
 
     #myCarousel .carousel-caption h1 {
